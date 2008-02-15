@@ -18,7 +18,7 @@ files.
 %setup -q
 
 %build
-%{__cc} yamdi.c -o yamdi -O2 -Wall -D_FILE_OFFSET_BITS=64
+%{__cc} yamdi.c -o yamdi %{rpmcflags} -Wall -D_FILE_OFFSET_BITS=64
 
 %install
 rm -rf $RPM_BUILD_ROOT
