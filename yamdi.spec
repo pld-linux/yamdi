@@ -1,11 +1,12 @@
 Summary:	Yet Another MetaData Injector for FLV
+Summary(pl.UTF-8):	Kolejny iniektor metadanych dla FLV
 Name:		yamdi
-Version:	1.2
+Version:	1.4
 Release:	1
 License:	Other
 Group:		Applications/Text
 Source0:	http://dl.sourceforge.net/yamdi/%{name}-%{version}.tar.gz
-# Source0-md5:	cfec9510b1f524cc8563be6e3367b25d
+# Source0-md5:	aaca43b47a4541564ee84ef1e3a22b04
 URL:		http://yamdi.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -13,6 +14,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 yamdi stands for Yet Another MetaData Injector and is a metadata
 injector for FLV files. It adds the onMetaData event to your FLV
 files.
+
+%description -l pl.UTF-8
+yamdi to rozwiniecie anglojęzycznego skrótu Yet Another MetaData
+Injector czyli Kolejny Iniektor Metadanych dla formatu FLV. Program
+dodaje zdarzenia onMetaData do plikow FLV.
 
 %prep
 %setup -q
